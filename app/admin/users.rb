@@ -9,5 +9,15 @@ index do
     column :created_at
     actions
   end
-
+  form do |f|
+    f.inputs do
+      f.input :firstname
+      f.input :lastname
+      f.input :email
+      f.input :password
+      f.input :password_confirmation
+      f.input :points
+    end
+    f.actions
+  end
 end
