@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  resources :users
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  resources :users
 
   namespace :api do
     namespace :v1 do
