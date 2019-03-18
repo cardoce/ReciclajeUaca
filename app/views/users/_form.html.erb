@@ -12,18 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :user_name %>
-  </div>
-
-  <div class="field">
     <%= form.label :email %>
     <%= form.text_field :email, id: :user_email %>
   </div>
 
   <div class="field">
     <%= form.label :password %>
-    <%= form.text_field :password, id: :user_password %>
+    <%= form.password_field :password, id: :user_password %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password_confirmation %>
+    <%= form.password_field :password_confirmation, id: :user_password_confirmation %>
   </div>
 
   <div class="field">
@@ -32,8 +32,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :rol %>
-    <%= form.text_field :rol, id: :user_rol %>
+    <%= form.label :firstname %>
+    <%= form.text_field :firstname, id: :user_firstname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lastname %>
+    <%= form.text_field :lastname, id: :user_lastname %>
   </div>
 
   <div class="actions">
