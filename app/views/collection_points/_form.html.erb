@@ -1,0 +1,27 @@
+<%= form_with(model: collection_point, local: true) do |form| %>
+  <% if collection_point.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(collection_point.errors.count, "error") %> prohibited this collection_point from being saved:</h2>
+
+      <ul>
+      <% collection_point.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :collection_point_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :direction %>
+    <%= form.text_field :direction, id: :collection_point_direction %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
