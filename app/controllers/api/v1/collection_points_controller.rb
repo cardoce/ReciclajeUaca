@@ -9,7 +9,8 @@ module Api
         end
 
         def assign_points(user_id)
-            
+          assign_points(user_id)
+        end
       end
     end
   end
