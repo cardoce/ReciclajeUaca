@@ -8,8 +8,11 @@ module Api
           render json: @collection_points
         end
 
-        def assign_points(user_id)
-          assign_points(user_id)
+        def assign_points
+          @user = User.find_by(id: params[:user_id])
+          @user.points += 10
+          @user.save
+          render json:  @user
         end
       end
     end
