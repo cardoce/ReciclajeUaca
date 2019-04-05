@@ -7,6 +7,10 @@ end
 
 gem 'activeadmin'
 gem 'rb-readline'
+gem 'railroady'
+gem 'rails-erd'
+gem 'jwt'
+gem 'simple_command'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6', '>= 5.1.6.2'
